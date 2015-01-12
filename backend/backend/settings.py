@@ -19,10 +19,12 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.staticfiles',
     'django_extensions',
     'rest_framework',
     'corsheaders',
-    'backend'
+    'backend',
+    'candidates'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -66,6 +68,8 @@ CACHES = {
 }
 
 CORS_ORIGIN_ALLOW_ALL = True
+
+STATIC_URL = '/static/'
 
 try:
     from local_settings import *
